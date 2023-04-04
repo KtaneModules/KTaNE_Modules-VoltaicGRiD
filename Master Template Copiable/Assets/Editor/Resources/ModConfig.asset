@@ -14,7 +14,10 @@ MonoBehaviour:
   id: template
   title: Template
   author: 
-  description: 
+  description: "[INSERT FLAVOR TEXT HERE]\n\n[INSERT SOLVING DESCRIPTION HERE]\n\n[INSERT
+    POTENTIAL CREDITS HERE]\n\nThe manual can be found in the manuals folder of the
+    game or at ktane.timwi.de.\n\r\nContact Fartlicker777#9169 on Discord if there
+    are any bugs."
   version: 
   outputFolder: build
   previewImage: {fileID: 0}
