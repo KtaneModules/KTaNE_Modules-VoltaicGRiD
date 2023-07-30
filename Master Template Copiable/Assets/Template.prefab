@@ -108,7 +108,6 @@ GameObject:
   - component: {fileID: 114454383462897410}
   - component: {fileID: 114853960920223876}
   - component: {fileID: 114139553842080666}
-  - component: {fileID: 114846405590615918}
   - component: {fileID: 114990544492691844}
   m_Layer: 0
   m_Name: Template
@@ -374,12 +373,14 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1632732172504050}
-  m_Text: Hello World
+  m_Text: 'Hello
+
+    World'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
   m_Anchor: 4
-  m_Alignment: 0
+  m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 300
   m_FontStyle: 0
@@ -460,19 +461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - KT/Mobile/Diffuse
---- !u!114 &114846405590615918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676409040304040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6121698d53055a46bc06b4583486331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bomb: {fileID: 114454383462897410}
-  Audio: {fileID: 114915473299363512}
 --- !u!114 &114853960920223876
 MonoBehaviour:
   m_ObjectHideFlags: 1

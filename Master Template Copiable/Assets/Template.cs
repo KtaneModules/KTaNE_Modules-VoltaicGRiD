@@ -17,7 +17,7 @@ public class Template : MonoBehaviour {
    int ModuleId;
    private bool ModuleSolved;
 
-   void Awake () {
+   void Awake () { //Avoid doing calculations in here regarding edgework. Just use this for setting up buttons for simplicity.
       ModuleId = ModuleIdCounter++;
       GetComponent<KMBombModule>().OnActivate += Activate;
       /*
@@ -38,7 +38,7 @@ public class Template : MonoBehaviour {
 
    }
 
-   void Start () { //Shit
+   void Start () { //Shit that you calculate, usually a majority if not all of the module
       
    }
 
