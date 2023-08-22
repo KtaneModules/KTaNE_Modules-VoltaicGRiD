@@ -1,10 +1,10 @@
 #[ModKit Wiki](../../wiki)
 # How to get started with KTANE Modding
 
-If you would like to learn how to develop mods in video form, refer to Royal_Flu$h's tutorial series:
-https://www.youtube.com/playlist?list=PLDHjUZseb2dn07p0Hh35iYJt-pDtWSgJ0
+If you would like to learn how to develop mods in video form, refer to Deaf's tutorial:
+https://youtu.be/YobuGSBl3i0
 
-For videos about things Royal's tutorial does not cover, look here:
+For videos about things Deaf's tutorials don't cover, look here:
 https://www.youtube.com/playlist?list=PL-1P5EmkkFxrwWW6z0uZ5nBdRImsReOQ0
 
 Basic setup for first-time users:
