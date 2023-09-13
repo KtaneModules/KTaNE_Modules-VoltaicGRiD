@@ -110,7 +110,7 @@ public class BossTemplate : MonoBehaviour {
          return;
       }
 
-      UpdateModCount();
+      ModCount = Bomb.GetSolvableModuleNames().Count(x => !ignoredModules.Contains(x));
 
       int Solved = Bomb.GetSolvedModuleNames().Count(x => !ignoredModules.Contains(x));
 
@@ -124,16 +124,6 @@ public class BossTemplate : MonoBehaviour {
          Debug.Log(Stage); //Stage is 0 indexed, so adjust what you need for your specific circumstances.
          Stage++;
       }
-   }
-
-   void UpdateModCount () {
-      int Ignored = 0;
-      for (int i = 0; i < Bomb.GetSolvableModuleNames().Count(); i++) {
-         if (ignoredModules.Contains(Bomb.GetSolvableModuleNames()[i])) {
-            Ignored++;
-         }
-      }
-      ModCount = Bomb.GetSolvableModuleNames().Count() - Ignored;
    }
 
    void Solve () {
