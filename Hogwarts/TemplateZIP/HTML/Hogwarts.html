@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Hogwarts — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        table {
+            margin: 1em auto;
+        }
+
+        .custom-footer {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .custom-footer span {
+            width: 100%;
+        }
+
+        .footer-left {
+            margin: 15px;
+            width: 33%;
+            position: relative;
+            justify-content: space-between;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .footer-center {
+            margin: auto;
+            width: 33%;
+        }
+
+        .footer-right {
+            margin: auto;
+            width: 33%;
+        }
+
+        .page-content {
+            min-height: 8.5in;
+        }
+
+        .names {
+            width: 25%;
+        }
+
+        .names span {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .page {
+            position: relative;
+            width: 8.5in;
+            height: 11in; /* or any specific height you need */
+            margin-bottom: 20px; /* space between pages */
+            page-break-after: always; /* ensure each section starts on a new page when printed */
+            overflow: hidden;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            height: 50%;
+            background-image: url('img/Component/Hogwarts.svg'); /* Path to your watermark image */
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1; /* Adjust opacity for watermark effect */
+            z-index: 0;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Hogwarts</span>
+            </div>
+            <div class="page-content">
+                <div class="watermark"></div>
+                <img src="img/Component/Hogwarts.svg" class="diagram">
+                <h2>On the Subject of Hogwarts</h2>
+                <p class="flavour-text">HSD requires all Bomb Diffusal 101 students read this manual...</p>
+
+                <p>Welcome to Bomb Diffusal 101. Below is all of the information you need to identify the person at Hogwarts responsible for this module.</p>
+                <p>In order to solve this module, you'll need to identify the highlighted person's house. The person on the display may not be a current student or professor.</p>
+
+                <h3>Identifying a house</h3>
+                <ul>
+                    <li>Houses use the same logo as they do at the school.</li>
+                    <li>A person's house is never changed.</li>
+                    <li>Only select a house once all other switches have been identified.</li>
+                    <li>Use the table on the 3rd page to identify the correct switch positions.</li>
+                </ul>
+
+                <table>
+                    <tr>
+                        <th>Gryffindor</th>
+                        <th>Hufflepuff</th>
+                        <th>Ravenclaw</th>
+                        <th>Slytherin</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Hogwarts/Gryffindor.png" style="max-width: 150px;" /></td>
+                        <td><img src="img/Hogwarts/Hufflepuff.png" style="max-width: 150px;" /></td>
+                        <td><img src="img/Hogwarts/Ravenclaw.png" style="max-width: 150px;" /></td>
+                        <td><img src="img/Hogwarts/Slytherin.png" style="max-width: 150px;" /></td>
+                    </tr>
+                </table>
+                <h4>Color-coded Quidditch Positions</h4>
+                <p>Use this guide to help idenfity the Quidditch positions of each character in the table on the next page.</p>
+                <table>
+                    <tr>
+                        <td>
+                            <span style="color: red">RED</span> => Beater
+                        </td>
+                        <td>
+                            <span style="color: green">GREEN</span> => Keeper
+                        </td>
+                        <td>
+                            <span style="color: blue">BLUE</span> => Chaser
+                        </td>
+                        <td>
+                            <span style="color: orange">ORANGE</span> => Seeker
+                        </td>
+                        <td>
+                            <span style="color: gold">GOLD</span> => Captain
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr />
+            <div class="page-footer custom-footer">
+                <div class="footer-left">
+                    <span>Bomb Diffusal 101</span>
+                    <span>&copy Filius Flitwick</span>
+                </div>
+                <div class="footer-center">
+                    <div style="display: block; width: 100%; height: 100%; margin-bottom: 10px;">
+                        <span></span>
+                        <span>Page 1 of 3</span>
+                    </div>
+
+                </div>
+                <div class="footer-right"><img src="img/Component/Hogwarts.svg" style="width: 50%" /></div>
+            </div>
+        </div>
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Hogwarts</span>
+            </div>
+            <div class="page-content">
+                <div class="watermark"></div>
+                <h3>Who's Where</h3>
+
+                <table cellspacing="0">
+                    <tr>
+                        <th>Gryffindor</th>
+                        <th>Hufflepuff</th>
+                        <th>Ravenclaw</th>
+                        <th>Slytherin</th>
+                    </tr>
+                    <tr>
+                        <td class="names">
+                            <span style="color: blue;">Katie Bell</span>
+                            <span style="color: orange;">Sirius Black</span>
+                            <span style="color: blue;">Lavender Brown</span>
+                            <span>Colin Creevey</span>
+                            <span>Albus Dumbledore</span>
+                            <span>Seamus Finnigan</span>
+                            <span>Hermione Granger</span>
+                            <span>Rubeus Hagrid</span>
+                            <span style="color: blue;">Angelina Johnson</span>
+                            <span>Neville Longbottom</span>
+                            <span style="color: gold;">Minerva McGonagall</span>
+                            <span>Parvati Patil</span>
+                            <span style="color: orange;">Harry Potter</span>
+                            <span>Lily Potter</span>
+                            <span>James Potter</span>
+                            <span style="color: blue;">Alicia Spinnet</span>
+                            <span>Dean Thomas</span>
+                            <span style="color: green;">Oliver Wood</span>
+                            <span style="color: red;">Ron Weasley</span>
+                            <span style="color: orange;">Ginny Weasley</span>
+                            <span style="color: red;">Fred Weasley</span>
+                            <span style="color: red;">George Weasley</span>
+                            <span>Percy Weasley</span>
+                        </td>
+                        <td class="names">
+                            <span>Hannah Abbott</span>
+                            <span>Susan Bones</span>
+                            <span>Cedric Diggory</span>
+                            <span>Justin Finch-Fletchley</span>
+                            <span style="color: green;">Ernie Macmillan</span>
+                            <span>Newt Scamander</span>
+                            <span style="color: red;">Zacharias Smith</span>
+                            <span>Pomona Sprout</span>
+                            <span>Nymphadora Tonks</span>
+                        </td>
+                        <td class="names">
+                            <span>Terry Boot</span>
+                            <span style="color: blue;">Cho Chang</span>
+                            <span>Penelope Clearwater</span>
+                            <span style="color: blue;">Michael Corner</span>
+                            <span>Filius Flitwick</span>
+                            <span>Anthony Goldstein</span>
+                            <span>Gilderoy Lockhart</span>
+                            <span>Luna Lovegood</span>
+                            <span>Moaning Myrtle</span>
+                            <span style="color: blue;">Padma Patil</span>
+                            <span>Quirinus Quirrell</span>
+                        </td>
+                        <td class="names">
+                            <span>Phineas Nigellus Black</span>
+                            <span>Regulus Black</span>
+                            <span style="color: red;">Vincent Crabbe</span>
+                            <span style="color: gold;">Marcus Flint</span>
+                            <span style="color: red;">Gregory Goyle</span>
+                            <span>Bellatrix Lestrange</span>
+                            <span>Lucius Malfoy</span>
+                            <span style="color: red;">Draco Malfoy</span>
+                            <span>Narcissa Malfoy</span>
+                            <span style="color: red;">Graham Montague</span>
+                            <span>Pansy Parkinson</span>
+                            <span style="color: red;">Adrian Pucey</span>
+                            <span>Tom Riddle</span>
+                            <span>Horace Slughorn</span>
+                            <span>Severus Snape</span>
+                            <span style="color: red;">Cassius Warrington</span>
+                            <span>Blaise Zabini</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr />
+            <div class="page-footer custom-footer">
+                <div class="footer-left">
+                    <span>Bomb Diffusal 101</span>
+                    <span>&copy Filius Flitwick</span>
+                </div>
+                <hr />
+                <div class="footer-center">
+                    <div style="display: block; width: 100%; height: 100%; margin-bottom: 10px;">
+                        <span></span>
+                        <span>Page 2 of 3</span>
+                    </div>
+
+                </div>
+                <div class="footer-right"><img src="img/Component/Hogwarts.svg" style="width: 50%" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="page page-bg-02">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+            <span class="page-header-section-title">Hogwarts</span>
+        </div>
+        <div class="page-content">
+            <div class="watermark"></div>
+
+            <h3>Switch Identification</h3>
+            <p>Use this guide and the following table to correctly identify switch positions.</p>
+            <p>A switch is considered "on" if it is in the "up" position.</p>
+            <ul>
+                <li>B => # of batteries</li>
+                <li>S => Sum of all numbers in Serial Number</li>
+                <li>I => Number of lit indicators (minimum 1)</li>
+            </ul>
+            <h4 style="color: red;">Red Switch</h4>
+            <p>The red switch relies on the following calculation:</p>
+            <p><b>(B + (2 * S)) * (I ^ 2) + 60 >= 170</b></p>
+            <p>If the above asserts true, leave the switch in the on (up) position.</p>
+
+            <h4 style="color: gold;">Yellow Switch</h4>
+            <p>Turn the yellow switch off if the person in question is (or was) a <b>professor</b></p>
+
+            <h4 style="color: blue;">Blue Switch</h4>
+            <p>Use the following table, and this guide (opposite values stack):</p>
+            <ul>
+                <li>If the serial number is even (last digit), use the opposite value</li>
+                <li>If the person has a name containing at least 2 letters from the serial number, use the opposite value</li>
+                <li>If the person is/was a team captain, the switch is <b>always on</b></li>
+            </ul>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Seeker</th>
+                    <th>Chaser</th>
+                    <th>Keeper</th>
+                    <th>Beater</th>
+                    <th>NOTHING</th>
+                </tr>
+                <tr>
+                    <th>Gryffindor</th>
+                    <td>On</td>
+                    <td>Off</td>
+                    <td>On</td>
+                    <td>On</td>
+                    <td>Off</td>
+                </tr>
+                <tr>
+                    <th>Hufflepuff</th>
+                    <td>On</td>
+                    <td>Off</td>
+                    <td>Off</td>
+                    <td>Off</td>
+                    <td>On</td>
+                </tr>
+                <tr>
+                    <th>Ravenclaw</th>
+                    <td>Off</td>
+                    <td>On</td>
+                    <td>On</td>
+                    <td>On</td>
+                    <td>On</td>
+                </tr>
+                <tr>
+                    <th>Slytherin</th>
+                    <td>On</td>
+                    <td>Off</td>
+                    <td>On</td>
+                    <td>Off</td>
+                    <td>Off</td>
+                </tr>
+            </table>
+        </div>
+        <hr />
+        <div class="page-footer custom-footer">
+            <div class="footer-left">
+                <span>Bomb Diffusal 101</span>
+                <span>&copy Filius Flitwick</span>
+            </div>
+            <hr />
+            <div class="footer-center">
+                <div style="display: block; width: 100%; height: 100%; margin-bottom: 10px;">
+                    <span></span>
+                    <span>Page 3 of 3</span>
+                </div>
+
+            </div>
+            <div class="footer-right"><img src="img/Component/Hogwarts.svg" style="width: 50%" /></div>
+        </div>
+    </div>
+</body>
+</html>
