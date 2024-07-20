@@ -169,8 +169,12 @@ public class Hogwarts : MonoBehaviour {
                 break;
         }
 
-        int people_rnd = Rnd.Range(0, people.Count);
-        Person = people[people_rnd];
+        // TESTING
+        house_rnd = 2;
+        Person = "Terry Boot";
+
+        //int people_rnd = Rnd.Range(0, people.Count);
+        //Person = people[people_rnd];
 
         Display.text = "[ " + Person + " ]";
 
@@ -192,13 +196,21 @@ public class Hogwarts : MonoBehaviour {
         var seri_letters = Bomb.GetSerialNumberLetters();
         var seri_sum = Bomb.GetSerialNumberNumbers().Sum();
         var ind_on = Bomb.GetOnIndicators().Count();
-        var ind_off = Bomb.GetOffIndicators().Count();
         var ind_tot = ind_on;
         var ind_score = 1;
-        
+
         if (ind_tot > 1) ind_score = ind_tot;
 
-        var score = ((batt + (2 * seri_sum)) * (ind_score ^ 2) + 60);
+        Debug.Log("Batt: " + batt + " - seri_sum: " + seri_sum + " - ind_score: " + ind_score);
+
+        var score = 2 * seri_sum;
+        Debug.Log(score);
+        score = score + batt;
+        Debug.Log(score);
+        score = score * (int)System.Math.Pow(ind_score, 2);
+        Debug.Log(score);
+        score = score + 60;
+        Debug.Log(score);
 
         return score;
     }
@@ -217,10 +229,11 @@ public class Hogwarts : MonoBehaviour {
 
         int matchCount = Person
             .ToUpper()
-            .Count(c => serial_letters.ToString().ToUpper().Contains(c));
+            .Count(c => serial_letters.Contains(c));
 
         if (matchCount >= 2)
         {
+            Debug.Log(matchCount + " letters match");
             flip++; 
         }
 
