@@ -10,6 +10,7 @@ using Math = ExMath;
 using System.CodeDom.Compiler;
 using System.ComponentModel;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.Networking;
 
 public class Hogwarts : MonoBehaviour {
 
@@ -212,20 +213,17 @@ public class Hogwarts : MonoBehaviour {
         var keeper = Keeper.Any(p => p == Person);
         var serial_letters = Bomb.GetSerialNumberLetters();
 
-        var flip = 0; 
-        var matching = 0;
+        var flip = 0;
 
-        for (int i = 0; i < Person.Length; i++)
+        int matchCount = Person
+            .ToUpper()
+            .Count(c => serial_letters.ToString().ToUpper().Contains(c));
+
+        if (matchCount >= 2)
         {
-            if (serial_letters.Any(l => l == Person[i])) matching++;
-            if (matching >= 2) break;
+            flip++; 
         }
 
-        if (matching >= 2)
-        {
-            Debug.Log("Matching letters >= 2");
-            flip++;
-        }
         if (serial_even)
         {
             Debug.Log("Serial # even");
