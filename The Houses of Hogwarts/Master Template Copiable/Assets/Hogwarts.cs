@@ -44,8 +44,13 @@ public class Hogwarts : MonoBehaviour {
     private int Gryffindor_Slytherin = 170;
 
     // Switch 1: 
-    private int[] switch_states = { 1, 1, 1 };
+    private int[] switch_states = { 0, 0, 0 };
     private int[] correct_states = { 0, 0, 0 };
+
+    public Material LedOn;
+    public Material LedOff;
+
+    public GameObject[] Lights;
 
     private string Person = "";
 
@@ -65,6 +70,8 @@ public class Hogwarts : MonoBehaviour {
 
     void ButtonPress(KMSelectable origin)
     {
+        origin.AddInteractionPunch();
+
         Debug.Log(string.Format("Button pressed: {0}", origin.transform.name));
         Debug.Log(string.Format("Switch states: {0}.{1}.{2}", switch_states[0], switch_states[1], switch_states[2]));
         Debug.Log(string.Format("Correct states: {0}.{1}.{2}", correct_states[0], correct_states[1], correct_states[2]));
@@ -113,21 +120,19 @@ public class Hogwarts : MonoBehaviour {
 
     void SwitchSwitch(KMSelectable origin)
     {
-        origin.AddInteractionPunch();
-
         var index = Switches.ToList().IndexOf(origin);
 
-        if (origin.transform.rotation.x >= 0.4)
+        if (switch_states[index] == 1)
         {
-            // origin.transform.SetPositionAndRotation(origin.transform.position, new Quaternion(-0.5f, 0, 0, 0.9f));
-            origin.transform.rotation = Quaternion.Euler(new Vector3(-55f, 0f, 0f));
+            Lights[index].GetComponent<MeshRenderer>().material = LedOff;
+
             switch_states[index] = 0;
         }
 
-        else if (origin.transform.rotation.x <= -0.4)
+        else
         {
-            // origin.transform.SetPositionAndRotation(origin.transform.position, new Quaternion(0.5f, 0, 0, 0.9f));
-            origin.transform.rotation = Quaternion.Euler(new Vector3(55f, 0f, 0f));
+            Lights[index].GetComponent<MeshRenderer>().material = LedOn;
+
             switch_states[index] = 1;
         }
 
@@ -141,7 +146,6 @@ public class Hogwarts : MonoBehaviour {
     void Activate () { //Shit that should happen when the bomb arrives (factory)/Lights turn on
 
     }
-
    
     void Start () { //Shit that you calculate, usually a majority if not all of the module
        
@@ -172,7 +176,7 @@ public class Hogwarts : MonoBehaviour {
         var score = RedSwitch();
         correct_states[0] = score > 170 ? 1 : 0;
         Debug.Log("Score: " + score);
-        correct_states[1] = Professors.Any(p => p == Person) ? 0 : 1;
+        correct_states[1] = Professors.Any(p => p == Person) ? 1 : 0;
 
         var captain = Captain.Any(p => p == Person);
 

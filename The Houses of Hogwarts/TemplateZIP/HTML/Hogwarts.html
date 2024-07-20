@@ -86,25 +86,18 @@
         <div class="page page-bg-01">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Hogwarts</span>
+                <span class="page-header-section-title">The Houses of Hogwarts</span>
             </div>
             <div class="page-content">
                 <div class="watermark"></div>
                 <img src="img/Component/Hogwarts.svg" class="diagram">
-                <h2>On the Subject of Hogwarts</h2>
+                <h2>On the Subject of the Houses of Hogwarts</h2>
                 <p class="flavour-text">HSD requires all Bomb Diffusal 101 students read this manual...</p>
 
                 <p>Welcome to Bomb Diffusal 101. Below is all of the information you need to identify the person at Hogwarts responsible for this module.</p>
                 <p>In order to solve this module, you'll need to identify the highlighted person's house. The person on the display may not be a current student or professor.</p>
 
                 <h3>Identifying a house</h3>
-                <ul>
-                    <li>Houses use the same logo as they do at the school.</li>
-                    <li>A person's house is never changed.</li>
-                    <li>Only select a house once all other switches have been identified.</li>
-                    <li>Use the table on the 3rd page to identify the correct switch positions.</li>
-                </ul>
-
                 <table>
                     <tr>
                         <th>Gryffindor</th>
@@ -140,6 +133,24 @@
                         </td>
                     </tr>
                 </table>
+                <h4>Professors</h4>
+                <table>
+                    <tr>
+                        <td>Dumbledore</td>
+                        <td>McGonagall</td>
+                        <td>Snape</td>
+                        <td>Flitwick</td>
+                        <td>Sprout</td>
+                        <td>Slughorn</td>
+                    </tr>
+                    <tr>
+                        <td>Lupin</td>
+                        <td>Lockhart</td>
+                        <td>Trelawney</td>
+                        <td>Hagrid</td>
+                        <td colspan="2">Quirrell</td>
+                    </tr>
+                </table>
             </div>
             <hr />
             <div class="page-footer custom-footer">
@@ -160,7 +171,7 @@
         <div class="page page-bg-02">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Hogwarts</span>
+                <span class="page-header-section-title">The Houses of Hogwarts</span>
             </div>
             <div class="page-content">
                 <div class="watermark"></div>
@@ -168,10 +179,10 @@
 
                 <table cellspacing="0">
                     <tr>
-                        <th>Gryffindor</th>
-                        <th>Hufflepuff</th>
-                        <th>Ravenclaw</th>
-                        <th>Slytherin</th>
+                        <th width="25%">Gryffindor</th>
+                        <th width="25%">Hufflepuff</th>
+                        <th width="25%">Ravenclaw</th>
+                        <th width="25%">Slytherin</th>
                     </tr>
                     <tr>
                         <td class="names">
@@ -185,6 +196,7 @@
                             <span>Rubeus Hagrid</span>
                             <span style="color: blue;">Angelina Johnson</span>
                             <span>Neville Longbottom</span>
+                            <span>Reamus Lupin</span>
                             <span style="color: gold;">Minerva McGonagall</span>
                             <span>Parvati Patil</span>
                             <span style="color: orange;">Harry Potter</span>
@@ -222,6 +234,7 @@
                             <span>Moaning Myrtle</span>
                             <span style="color: blue;">Padma Patil</span>
                             <span>Quirinus Quirrell</span>
+                            <span>Sybill Trelawney</span>
                         </td>
                         <td class="names">
                             <span>Phineas Nigellus Black</span>
@@ -239,7 +252,7 @@
                             <span>Tom Riddle</span>
                             <span>Horace Slughorn</span>
                             <span>Severus Snape</span>
-                            <span style="color: red;">Cassius Warrington</span>
+                            <span>Cassius Warrington</span>
                             <span>Blaise Zabini</span>
                         </td>
                     </tr>
@@ -266,33 +279,33 @@
     <div class="page page-bg-02">
         <div class="page-header">
             <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-            <span class="page-header-section-title">Hogwarts</span>
+            <span class="page-header-section-title">The Houses of Hogwarts</span>
         </div>
         <div class="page-content">
             <div class="watermark"></div>
 
-            <h3>Switch Identification</h3>
-            <p>Use this guide and the following table to correctly identify switch positions.</p>
-            <p>A switch is considered "on" if it is in the "up" position.</p>
+            <h3>Light Identification</h3>
+            <p>Use this guide and the following table to correctly identify light status.</p>
+            <p>A button is considered "on" if its accompanied light is green.</p>
             <ul>
                 <li>B => # of batteries</li>
                 <li>S => Sum of all numbers in Serial Number</li>
                 <li>I => Number of lit indicators (minimum 1)</li>
             </ul>
-            <h4 style="color: red;">Red Switch</h4>
+            <h4 style="color: red;">Red Button</h4>
             <p>The red switch relies on the following calculation:</p>
             <p><b>(B + (2 * S)) * (I ^ 2) + 60 >= 170</b></p>
-            <p>If the above asserts true, leave the switch in the on (up) position.</p>
+            <p>If the above asserts true, turn the light on.</p>
 
-            <h4 style="color: gold;">Yellow Switch</h4>
-            <p>Turn the yellow switch off if the person in question is (or was) a <b>professor</b></p>
+            <h4 style="color: gold;">Yellow Button</h4>
+            <p>Turn the light on if the person in question is (or was) a <b>professor</b></p>
 
-            <h4 style="color: blue;">Blue Switch</h4>
+            <h4 style="color: blue;">Blue Button</h4>
             <p>Use the following table, and this guide (opposite values stack):</p>
             <ul>
                 <li>If the serial number is even (last digit), use the opposite value</li>
                 <li>If the person has a name containing at least 2 letters from the serial number, use the opposite value</li>
-                <li>If the person is/was a team captain, the switch is <b>always on</b></li>
+                <li>If the person is or was a team captain, the light is <b>always on</b></li>
             </ul>
             <table>
                 <tr>

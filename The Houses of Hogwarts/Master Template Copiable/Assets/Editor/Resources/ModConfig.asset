@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
   m_Name: ModConfig
   m_EditorClassIdentifier: 
-  id: hogwarts
-  title: Hogwarts
+  id: housesOfHogwarts
+  title: The Houses of Hogwarts
   author: Dustin Conlon (VoltaicGRiD)
   description: "HSD requires all Bomb Diffusal 101 students read this manual...\n\nFollow
     the instructions carefully, and use your head!\n\nCredit to my sister for the
