@@ -149,8 +149,6 @@ public class Hogwarts : MonoBehaviour {
     }
    
     void Start () { //Shit that you calculate, usually a majority if not all of the module
-       
-
         int house_rnd = Rnd.Range(0, 4);
         List<string> people = new List<string>();
         switch (house_rnd)
@@ -169,12 +167,8 @@ public class Hogwarts : MonoBehaviour {
                 break;
         }
 
-        // TESTING
-        house_rnd = 2;
-        Person = "Terry Boot";
-
-        //int people_rnd = Rnd.Range(0, people.Count);
-        //Person = people[people_rnd];
+        int people_rnd = Rnd.Range(0, people.Count);
+        Person = people[people_rnd];
 
         Display.text = "[ " + Person + " ]";
 

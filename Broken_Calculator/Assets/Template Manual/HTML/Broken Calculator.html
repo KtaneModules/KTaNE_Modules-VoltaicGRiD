@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Broken Calculator — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <!-- Remove the whole style tag if empty -->
+    <style>
+        /* Remove this if you do not have any tables */
+        .dark table, table {
+            margin: 1em auto;
+            border: none;
+        }
+
+        /* Remove this if you only have a single page */
+        .page-footer::before { content: 'Page '; }
+        .page-footer::after { content: ' of 2'; }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Broken Calculator</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Module Name.svg" class="diagram">
+                <h2>On the Subject of Broken Calculator</h2>
+                <p class="flavour-text">Even a broken clock is right twice a day.</p>
+                <p>A seemingly normal-looking, 10-digit calculator with an issue or two. Otherwise, perfectly functional, and useful for doing on-bomb calculations</p>
+
+                <h3>Identifying the issue</h3>
+                <p>During bomb initialization, the calculator displays a series of simple, pre-algebraic equations, and what the calculator says it equals. Of these calculations, at least one is wrong, leading to an incorrect equals value.</p>
+                <p>The following arithmetic operations are possible on the calculator, but the calculator is unable to perform that action.</p>
+                <p><b>Addition, Subtraction, Multiplication, Division, Modulus</b></p>
+
+                <h3>Fixing the calculator</h3>
+                <p>After identifying the above arithmetic operation that is broken, identify the "reset" equation(s) below and input them to repair the calculator's functionality.</p>
+                <p>Input the equation correctly, then tap the equals button to allow for a forced equals input, where the value of the equation can be put in. Inputting the wrong forced-reset value will incure a strike.</p>
+                <p>Variable values below must be calculated, before inputting their numerical value into the Broken Calculator.</p>
+                <p>If a <b>voltage meter</b> is present on the bomb, <b>divide</b> all non-variable numbers in the equations below by the voltage specified.</p>
+                
+                <table style="align-content: flex-start; display: flex;">
+                    <tr>
+                        <th>Operation</th>
+                        <th>Reset #1</th>
+                        <th>Reset #2</th>
+                    </tr>
+                    <tr>
+                        <th>Addition</th>
+                        <td><math display="block" >
+                            <mrow>
+                                <mn>44</mn>
+                                <mo>&times;</mo>
+                            </mrow>
+                        </td>
+                        <td>44 &times; (B mod L)</td>
+                        <td>15 &divide; (M mod U)</td>
+                    </tr>
+                    <tr>
+                        <th>Subtraction</th>
+                        <td>86 + (M &times; B)</td>
+                        <td>115 &divide; (A<sup>B</sup>)</td>
+                    </tr>
+                    <tr>
+                        <th>Multiplication</th>
+                        <td>
+                            <math display="block">
+                                <mfrac>
+                                    <mrow>
+                                        <mi>B</mi>
+                                        <mo>+</mo>
+                                        <mn>63</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mi>#</mi>
+                                        <mo>&minus;</mo>
+                                        <mi>L</mi>
+                                        <mo>&minus;</mo>
+                                        <mo>(</mo>
+                                        <mn>200</mn>
+                                        <mo>%</mo>
+                                        <mi>#</mi>
+                                        <mo>)</mo>
+                                        <mo>)</mo>
+                                    </mrow>
+                                </mfrac>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Division</th>
+                        <td><math display="block">
+                            <mrow>
+                                <mo>(</mo>
+                                <mi>S</mi>
+                                <mo>&times;</mo>
+                                <mn>18</mn>
+                                <mo>)</mo>
+                                <mo>&times;</mo>
+                                <msup>
+                                    <mi>A</mi>
+                                    <mrow>
+                                        <mi>L</mi>
+                                        <mo>+</mo>
+                                        <mn>1</mn>
+                                    </mrow>
+                                </msup>
+                                <mo>&times;</mo>
+                                <mi>M</mi>
+                            </mrow>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Modulus</th>
+                        <td>Add #2 &divide; Sub #1</td>
+                        <td>Mult #1 &times; Div #2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer">1</div>
+        </div>
+
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Broken Calculator</span>
+            </div>
+            <div class="page-content">
+                <h2>Appendix BRKNCLC</h2>
+                <table style="align-content: flex-start; display: flex">
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>Batteries</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>Lit indicators</td>
+                    </tr>
+                    <tr>
+                        <td>U</td>
+                        <td>Unlit indicators</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>Modules</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>Strikes</td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>First letter of the Serial Number's numerical value</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td>First numeral in the Serial Number</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer">2</div>
+        </div>
+    </div>
+</body>
+</html>
