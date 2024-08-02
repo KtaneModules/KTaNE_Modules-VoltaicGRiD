@@ -57,15 +57,50 @@
                             <mrow>
                                 <mn>44</mn>
                                 <mo>&times;</mo>
+                                <mo>(</mo>
+                                <mi>B</mi>
+                                <mo>%</mo>
+                                <mi>L</mi>
+                                <mo>)</mo>
                             </mrow>
                         </td>
-                        <td>44 &times; (B mod L)</td>
-                        <td>15 &divide; (M mod U)</td>
+                        <td><math display="block" >
+                            <mfrac>
+                                <mn>15</mn>
+                                <mrow>
+                                    <mi>M</mi>
+                                    <mo>%</mo>
+                                    <mi>U</mi>
+                                </mrow>
+                            </mfrac>
+                        </td>
                     </tr>
                     <tr>
                         <th>Subtraction</th>
-                        <td>86 + (M &times; B)</td>
-                        <td>115 &divide; (A<sup>B</sup>)</td>
+                        <td><math display="block" >
+                            <mrow>
+                                <mn>86</mn>
+                                <mo>+</mo>
+                                <mo>(</mo>
+                                <mi>M</mi>
+                                <mo>&times;</mo>
+                                <mi>B</mi>
+                                <mo>)</mo>
+                            </mrow>    
+                        </td>
+                        <td><math display="block">
+                            <mfrac>
+                                <mn>115</mn>
+                                <mrow>
+                                    <msup>
+                                        <mi>A</mi>
+                                        <mrow>
+                                            <mi>B</mi>
+                                        </mrow>
+                                    </msup>
+                                </mrow>
+                            </mfrac>
+                        </td>
                     </tr>
                     <tr>
                         <th>Multiplication</th>
@@ -97,12 +132,8 @@
                         <th>Division</th>
                         <td><math display="block">
                             <mrow>
-                                <mo>(</mo>
                                 <mi>S</mi>
-                                <mo>&times;</mo>
-                                <mn>18</mn>
-                                <mo>)</mo>
-                                <mo>&times;</mo>
+                                <mo>+</mo>
                                 <msup>
                                     <mi>A</mi>
                                     <mrow>
@@ -119,8 +150,17 @@
                     </tr>
                     <tr>
                         <th>Modulus</th>
-                        <td>Add #2 &divide; Sub #1</td>
-                        <td>Mult #1 &times; Div #2</td>
+                        <td><math display="block" >
+                            <mfrac>
+                                <ms>Add #2</ms>
+                                <ms>Sub #1</ms>
+                            </mfrac>
+                        </td>
+                        <td><math display="block">
+                            <ms>Add #2</ms>
+                            <mo>&times;</mo>
+                            <ms>Sub #1</ms>
+                        </td>
                     </tr>
                 </table>
             </div>
