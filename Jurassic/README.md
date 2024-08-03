@@ -1,18 +1,9 @@
-#[ModKit Wiki](../../wiki)
-# How to get started with KTANE Modding
+Community fork of the KTaNE Modkit.
 
-If you would like to learn how to develop mods in video form, refer to Deaf's tutorial:
-https://youtu.be/YobuGSBl3i0
+The [original (official) modkit](https://github.com/keeptalkinggame/ktanemodkit) isn't going to receive updates anymore. This is the fork that will be maintained from now on.
 
-For videos about things Deaf's tutorials don't cover, look here:
-https://www.youtube.com/playlist?list=PL-1P5EmkkFxrwWW6z0uZ5nBdRImsReOQ0
+Community-made plugins can be installed at the `Keep Talking ModKit > Plugins` menupoint.
 
-Basic setup for first-time users:
-- Download this repo (Clone or Download) > (Download ZIP)
-- Download Unity 2017.4.22f1
-  Link: https://unity3d.com/unity/qa/lts-releases?version=2017.4&page=2
-- Download an IDE
-  - Visual Studio Link: https://visualstudio.microsoft.com/
-  - Visual Studio Code Link: https://code.visualstudio.com/
-  - Atom Link: https://atom.io/
-  - Notepad++ (Not recommended as an IDE but is still useful) Link: https://notepad-plus-plus.org/
+[Documentation](https://github.com/Qkrisi/ktanemodkit/wiki)
+
+To get more help, join the [Keep Talking and Nobody Explodes](https://discord.gg/ktane) or the [KTaNE Modding](https://discord.gg/qzy7Gdz) Discord servers.
