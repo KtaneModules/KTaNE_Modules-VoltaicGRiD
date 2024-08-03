@@ -1,0 +1,10 @@
+{
+  "name": "jurassic-Editor",
+  "references": [
+    "jurassic"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}
