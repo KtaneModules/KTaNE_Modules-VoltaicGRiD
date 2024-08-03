@@ -1,0 +1,10 @@
+{
+  "name": "brokenCalculator-Editor",
+  "references": [
+    "brokenCalculator"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}
