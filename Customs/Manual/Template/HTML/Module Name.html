@@ -3,150 +3,357 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Module Name — Keep Talking and Nobody Explodes Module</title>
+    <title>Needy Customs — Keep Talking and Nobody Explodes Module</title>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/ktane-utils.js"></script>
+    <style>
+        .table-container {
+            -webkit-column-width: 250px;
+            -moz-column-width: 250px;
+            column-width: 250px;
+            width: 100%; /* Adjust overall width of the container */
+        }
+
+        .custom-table {
+            /* border-collapse: collapse; */
+            margin-bottom: 8px;
+            width: 100%; /* Table fills the column width */
+            break-inside: avoid-column; /* Prevents table from splitting across columns */
+            font-size: 0.8rem;
+        }
+
+        .custom-table th, .custom-table td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center;
+            width: 50%;
+        }
+
+        th[rowspan] {
+            background-color: #f0f0f0; /* Styling for category cells */
+            width: 35% !important;
+        }
+    </style>
 </head>
 <body>
     <div class="section">
         <div class="page page-bg-01">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Module Name</span>
+                <span class="page-header-section-title">Needy Customs</span>
             </div>
             <div class="page-content">
-                <img src="img/Component/Module Name.svg" class="diagram">
-                <h2>On the Subject of Module Name</h2>
-                <p class="flavour-text">Your flavor text should go here.</p>
+                <img src="img/Component/Needy Customs.svg" class="diagram">
+                <h2>On the Subject of Needy Customs</h2>
+                <p class="flavour-text">We all have places to be... lets hurry this up eh?</p>
 
-                <p>Here are templates for commonly used manual features. Make sure to always use closing tags (the ones with a <code>/</code> in them).</p>
+                <p>A country and document is presented on the module. Compare it to the list(s) below and allow or deny entry. If the country and document match, automatically allow the person.</p>
 
-                <h3>Bullet Points (Unordered Lists)</h3>
-                <ul>
-                    <li>Bullet points should use the <code>&lt;ul&gt;&lt;/ul&gt;</code> and <code>&lt;li&gt;&lt;/li&gt;</code> tags.</li>
-                    <li>
-                        You can even have nested bullet points:
-                        <ul>
-                            <li>Indented</li>
-                            <li>Bullet Points</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Or numbered lists:
-                        <ol>
-                            <li>Indented</li>
-                            <li>Bullet Points</li>
-                        </ol>
-                    </li>
-                </ul>
+                <p>The second table shows items and their category. If <b>more than 2</b> items on the module <b>do not appear on the items list</b>, automatically deny the person.</p>
 
-                <h3>Numbered Lists (Ordered Lists)</h3>
-                <ol>
-                    <li>Numbered lists should use the <code>&lt;ol&gt;&lt;/ol&gt;</code> and <code>&lt;li&gt;&lt;/li&gt;</code> tags.</li>
-                    <li>Nested lists work just like unordered lists (see above).</li>
-                </ol>
-
-                <h3>Text</h3>
-                <p>Use paragraph tags (<code>&lt;p&gt;&lt;/p&gt;</code>) for text blocks. In addition, for text formatting, use:</p>
-                <ul>
-                    <li>
-                        <strong>Bold</strong>: <code>&lt;strong&gt;&lt;/strong&gt;</code> (HTML) or <code>font-weight: bold;</code> (CSS).
-                        <ul><li>Bold in table headers should be achieved through the use of the <code>&lt;th&gt;&lt;/th&gt;</code> tag.</li></ul>
-                    </li>
-                    <li><em>Underline</em>: <code>&lt;em&gt;&lt;/em&gt;</code> (HTML) or <code>text-decoration: underline;</code> (CSS).</li>
-                    <li>Line<br />Break: <code>&lt;br /&gt;</code> (HTML)</li>
-                </ul>
-                <p>For the most part, HTML versions of bolding and underlining is recommended. Note that italics are not used in vanilla manuals besides flavor text and references to appendices, and therefore is not included above. Also, here are some sample headings:</p>
-                <h3>Example Big Heading</h3>
-                <h4>Example Small Heading</h4>
+                <h4>Countries & Restrictions</h4>
+                <table border="1" width="100%" style="text-align: left; padding: 4px; font-size: 1rem;">
+                    <thead style="background-color: #f0f0f0">
+                        <tr>
+                            <th>Country</th>
+                            <th>Restriction</th>
+                            <th>Required Documentation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Australia</th>
+                            <td>Agricultural</td>
+                            <td>Quarantine declaration</td>
+                        </tr>
+                        <tr>
+                            <th>Brazil</th>
+                            <td>Electronics</td>
+                            <td>Authorization from ANATEL</td>
+                        </tr>
+                        <tr>
+                            <th>Canada</th>
+                            <td>Weapons</td>
+                            <td>Firearms declaration</td>
+                        </tr>
+                        <tr>
+                            <th>China</th>
+                            <td>Printed Material</td>
+                            <td>Content declaration</td>
+                        </tr>
+                        <tr>
+                            <th>France</th>
+                            <td>Animal Products</td>
+                            <td>Health certificate</td>
+                        </tr>
+                        <tr>
+                            <th>Germany</th>
+                            <td>Medication</td>
+                            <td>Customs declaration</td>
+                        </tr>
+                        <tr>
+                            <th>India</th>
+                            <td>Electronics</td>
+                            <td>Special import permit</td>
+                        </tr>
+                        <tr>
+                            <th>Japan</th>
+                            <td>Medication</td>
+                            <td>Yakkan Shoumei certificate</td>
+                        </tr>
+                        <tr>
+                            <th>Mexico</th>
+                            <td>Weapons</td>
+                            <td>Special import permit</td>
+                        </tr>
+                        <tr>
+                            <th>New Zealand</th>
+                            <td>Agricultural</td>
+                            <td>Biosecurity declaration</td>
+                        </tr>
+                        <tr>
+                            <th>Russia</th>
+                            <td>Printed Material</td>
+                            <td>Cultural artifact declaration</td>
+                        </tr>
+                        <tr>
+                            <th>Saudi Arabia</th>
+                            <td>Alcohol</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>South Africa</th>
+                            <td>Animal Products</td>
+                            <td>Veterinary certificate</td>
+                        </tr>
+                        <tr>
+                            <th>United Kingdom</th>
+                            <td>Weapons</td>
+                            <td>Firearms import license</td>
+                        </tr>
+                        <tr>
+                            <th>United States</th>
+                            <td>Agricultural</td>
+                            <td>APHIS permit</td>
+                        </tr>
+                        <tr>
+                            <th>Italy</th>
+                            <td>Artifacts</td>
+                            <td>Cultural import declaration</td>
+                        </tr>
+                        <tr>
+                            <th>South Korea</th>
+                            <td>Electronics</td>
+                            <td>Radio frequency authorization</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="page-footer relative-footer">Page 1 of 3</div>
+            <div class="page-footer relative-footer">Page 1 of 2</div>
         </div>
         <div class="page page-bg-02">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Module Name</span>
+                <span class="page-header-section-title">Needy Customs</span>
             </div>
             <div class="page-content">
-                <h3>Example Tables</h3>
-                <table>
-                    <tr>
-                        <th>Part of table</th>
-                        <th>How to make</th>
-                    </tr>
-                    <tr>
-                        <th>Rows and Columns</th>
-                        <td>
-                            Use <code>&lt;tr&gt;&lt;/tr&gt;</code> for rows.
-                            Use <code>&lt;th&gt;&lt;/th&gt;</code> or <code>&lt;td&gt;&lt;/td&gt;</code> for columns within rows (see below).
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Headings (left column and top row, in most cases)</th>
-                        <td>Use <code>&lt;th&gt;&lt;/th&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <th>Cells</th>
-                        <td>Use <code>&lt;td&gt;&lt;/td&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <th rowspan="2">Merged Cells</th>
-                        <td>Use <code>rowspan="_"</code> for merging cells vertically.</td>
-                    </tr>
-                    <tr>
-                        <td>Use <code>colspan="_"</code> for merging cells horizontally.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Note that merged cells created in other rows are skipped in affected rows (see HTML for above row).</td>
-                    </tr>
-                </table>
-                <p>If the table contents are not wide enough, tables are centered by default due to the <code>table</code> rule of the first <code>&lt;style&gt;</code> block (see above code).</p>
-                <table class="center">
-                    <tr>
-                        <th>Cell 1</th>
-                        <td>Cell 2</td>
-                    </tr>
-                    <tr>
-                        <th>Cell 3</th>
-                        <td>Cell 4</td>
-                    </tr>
-                </table>
+                <h4>Items & Categories</h4>
+                <div class="table-container">
+                    <table class="custom-table">
+                        <tr>
+                            <td>Tequila</td>
+                            <th class="category-cell" rowspan="2">Alcohol</th>
+                        </tr>
+                        <tr>
+                            <td>Whiskey</td>
+                        </tr>
+                    </table>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Beef Jerky</td>
+                            <th class="category-cell" rowspan="12">Agricultural</th>
+                        </tr>
+                        <tr>
+                            <td>Canned Soup</td>
+                        </tr>
+                        <tr>
+                            <td>Cheese</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate</td>
+                        </tr>
+                        <tr>
+                            <td>Fresh Apples</td>
+                        </tr>
+                        <tr>
+                            <td>Fresh Flowers</td>
+                        </tr>
+                        <tr>
+                            <td>Maple Syrup</td>
+                        </tr>
+                        <tr>
+                            <td>Meat Products</td>
+                        </tr>
+                        <tr>
+                            <td>Plant Seeds</td>
+                        </tr>
+                        <tr>
+                            <td>Seeds</td>
+                        </tr>
+                        <tr>
+                            <td>Tea Leaves</td>
+                        </tr>
+                        <tr>
+                            <td>Trail Mix</td>
+                        </tr>
+                    </table>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Fur Coats</td>
+                            <th class="category-cell" rowspan="4">Animal</th>
+                        </tr>
+                        <tr>
+                            <td>Leather Jackets</td>
+                        </tr>
+                        <tr>
+                            <td>Live Fish</td>
+                        </tr>
+                        <tr>
+                            <td>Live Lobsters</td>
+                        </tr>
+                    </table>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Antique Furniture</td>
+                            <th class="category-cell" rowspan="10">Artifacts</th>
+                        </tr>
+                        <tr>
+                            <td>Artwork</td>
+                        </tr>
+                        <tr>
+                            <td>Gold Jewelry</td>
+                        </tr>
+                        <tr>
+                            <td>Jewelry Box</td>
+                        </tr>
+                        <tr>
+                            <td>Keychain Souvenir</td>
+                        </tr>
+                        <tr>
+                            <td>Painting Supplies</td>
+                        </tr>
+                        <tr>
+                            <td>Pottery</td>
+                        </tr>
+                        <tr>
+                            <td>Rock Collection</td>
+                        </tr>
+                        <tr>
+                            <td>Sculpture</td>
+                        </tr>
+                        <tr>
+                            <td>Silver Coins</td>
+                        </tr>
+                    </table>
 
-                <h3>Images</h3>
-                <p>Use the <code>&lt;img src="_" /&gt;</code> tag for images. Make sure to put your images into the <code class="notcode">/img/[Module Name]/</code> folder. Adjust the width with CSS, using <code>width: _%;</code> (recommended) or <code>width: _px;</code>. Example:</p>
-                <img style='width: 100%' src="img/Module Name/Example Image.png" />
-
-                <h3>Making the PDF</h3>
-                <p>To make a PDF version of your manual, open the HTML file in Google Chrome and open the "Print" dialog (Usually <kbd>CTRL</kbd>+<kbd>P</kbd>) and choose "Save as PDF" as the destination.</p>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Camera</td>
+                            <th class="category-cell" rowspan="9">Electronics</th>
+                        </tr>
+                        <tr>
+                            <td>Drone</td>
+                        </tr>
+                        <tr>
+                            <td>Metal Detector</td>
+                        </tr>
+                        <tr>
+                            <td>Satellite Phone</td>
+                        </tr>
+                        <tr>
+                            <td>Smartphone</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                        </tr>
+                        <tr>
+                            <td>Tripod</td>
+                        </tr>
+                        <tr>
+                            <td>Unmanned Aerial Vehicle</td>
+                        </tr>
+                        <tr>
+                            <td>Video Game Console</td>
+                        </tr>
+                    </table>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Face Cream</td>
+                            <th class="category-cell" rowspan="4">Health</th>
+                        </tr>
+                        <tr>
+                            <td>Lipstick</td>
+                        </tr>
+                        <tr>
+                            <td>Perfume</td>
+                        </tr>
+                        <tr>
+                            <td>Shampoo</td>
+                        </tr>
+                    </table>
+         
+                    <table class="custom-table">
+                        <tr>
+                            <td>Herbal Supplements</td>
+                            <th class="category-cell" rowspan="4">Medication</th>
+                        </tr>
+                        <tr>
+                            <td>Prescription</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Supplements</td>
+                        </tr>
+                        <tr>
+                            <td>Vitamins</td>
+                        </tr>
+                    </table>
+                    <table class="custom-table">
+                        <tr>
+                            <td>Books</td>
+                            <th class="category-cell" rowspan="4">Printed Material</th>
+                        </tr>
+                        <tr>
+                            <td>Magazines</td>
+                        </tr>
+                        <tr>
+                            <td>Political Pamphlets</td>
+                        </tr>
+                        <tr>
+                            <td>Travel Guidebooks</td>
+                        </tr>
+                    </table>
+           
+                    <table class="custom-table">
+                        <tr>
+                            <td>Fireworks</td>
+                            <th class="category-cell" rowspan="4">Weapons</th>
+                        </tr>
+                        <tr>
+                            <td>Handgun</td>
+                        </tr>
+                        <tr>
+                            <td>Hunting Knife</td>
+                        </tr>
+                        <tr>
+                            <td>Rifle</td>
+                        </tr>
+                    </table>
+                    
+                </div>
             </div>
-            <div class="page-footer relative-footer">Page 2 of 3</div>
-        </div>
-        <div class="page page-bg-03">
-            <div class="page-header">
-                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Appendix Name</span>
-            </div>
-            <div class="page-content">
-                <h2>Appendix M: Additional Notes</h2>
-                <p>Here other things to keep in mind when making a manual page:</p>
-                <ul>
-                    <li><strong>There are comments <code>/* ... */</code> in the CSS code in the <code>&lt;style&gt;</code> blocks containing instructions. Follow those instructions before finishing your manual.</strong></li>
-                    <li>Normal and Needy module manual pages are formatted similarly. Widget manual pages are appendices and are formatted as such.</li>
-                    <li>Each manual or appendix page should have a <code>&lt;div class="page-footer...</code> at the bottom of the page, updated accordingly.</li>
-                    <li>Don't be afraid to ask for help if needed!</li>
-                    <li>
-                        A few things to reiterate:
-                        <ul>
-                            <li>Make sure to never forget closing tags (the ones with a <code>/</code> in them).</li>
-                            <li>For the most part, HTML versions of bolding and underlining is recommended.</li>
-                            <li>Italics are not used in vanilla manuals besides flavor text and references to appendices, and therefore is not included above. </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer relative-footer">Page 3 of 3</div>
+            <div class="page-footer relative-footer">Page 2 of 2</div>
         </div>
     </div>
 </body>

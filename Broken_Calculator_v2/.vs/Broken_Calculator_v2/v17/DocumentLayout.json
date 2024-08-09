@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dustin\\source\\repos\\KTaNE_Modules\\Broken_Calculator_v2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{168359AA-2C68-74FB-F424-16F7CA207CE7}|brokenCalculator.csproj|c:\\users\\dustin\\source\\repos\\ktane_modules\\broken_calculator_v2\\assets\\broken_calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{168359AA-2C68-74FB-F424-16F7CA207CE7}|brokenCalculator.csproj|solutionrelative:assets\\broken_calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Broken_Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\Dustin\\source\\repos\\KTaNE_Modules\\Broken_Calculator_v2\\Assets\\Broken_Calculator.cs",
+              "RelativeDocumentMoniker": "Assets\\Broken_Calculator.cs",
+              "ToolTip": "C:\\Users\\Dustin\\source\\repos\\KTaNE_Modules\\Broken_Calculator_v2\\Assets\\Broken_Calculator.cs",
+              "RelativeToolTip": "Assets\\Broken_Calculator.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAADgv40AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T23:31:48.83Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
