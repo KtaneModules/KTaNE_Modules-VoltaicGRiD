@@ -1,0 +1,10 @@
+{
+  "name": "customs-Editor",
+  "references": [
+    "customs"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": []
+}
