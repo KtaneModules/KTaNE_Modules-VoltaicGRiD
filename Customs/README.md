@@ -1,9 +1,20 @@
-Community fork of the KTaNE Modkit.
+# Customs (Needy)
 
-The [original (official) modkit](https://github.com/keeptalkinggame/ktanemodkit) isn't going to receive updates anymore. This is the fork that will be maintained from now on.
+A boss-esque needy module with a focus on preparedness. Relay the info before the timer starts, or else you might have some issues!
 
-Community-made plugins can be installed at the `Keep Talking ModKit > Plugins` menupoint.
+## How To Solve
+At the start of the game, identify & relay the country, items, and document. This information **will not** change when the needy is activated, but will change every time the needy is **deactivated**. This allows you to relay the info after solving, and prepare to answer correctly when the very short, 20 second timer initiates.
 
-[Documentation](https://github.com/Qkrisi/ktanemodkit/wiki)
+> [!CAUTION]
+> There are some items in the list that might try to trick you about what category they fall into.
 
-To get more help, join the [Keep Talking and Nobody Explodes](https://discord.gg/ktane) or the [KTaNE Modding](https://discord.gg/qzy7Gdz) Discord servers.
+> [!NOTE]
+> There __will__ be items that appear on the module, that don't appear in the list, the manual discusses how to deal with this.
+
+## Steam Link
+https://steamcommunity.com/sharedfiles/filedetails/?id=3306111446
+
+## Manuals
+[PDF Manual](https://github.com/VoltaicGRiD/KTaNE_Modules/blob/main/Customs/Manual/pdfs/NeedyModules/Needy%20Customs%20%E2%80%94%20Keep%20Talking%20and%20Nobody%20Explodes%20Module.pdf)
+ | 
+[HTML Manual](https://github.com/VoltaicGRiD/KTaNE_Modules/blob/main/Customs/Manual/Template/HTML/NeedyCustoms.html)
