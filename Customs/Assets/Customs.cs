@@ -311,8 +311,6 @@ public class Customs : MonoBehaviour
 
     void Start()
     { //Shit that you calculate, usually a majority if not all of the module
-        Needy.SetResetDelayTime(60f, 120f);
-
         System.Random rand = new System.Random();
         var countryId = rand.Next(0, countryList.Count);
         var country = countryList.ElementAt(countryId);

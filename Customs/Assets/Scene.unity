@@ -344,30 +344,6 @@ Prefab:
       propertyPath: m_Name
       value: Customs
       objectReference: {fileID: 0}
-    - target: {fileID: 4718568748304132, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4718568748304132, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4521036735519362, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4521036735519362, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.0002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4543629120284698, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.0055
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344087633537388, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.0055
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a436a4579fb4cd42a70c953c3bde969, type: 2}
   m_IsPrefabParent: 0

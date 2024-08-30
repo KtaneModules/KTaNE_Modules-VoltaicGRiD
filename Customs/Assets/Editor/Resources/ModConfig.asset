@@ -18,4 +18,4 @@ MonoBehaviour:
     before the timer starts, or else you might have some issues!
   version: 1.0
   outputFolder: build
-  previewImage: {fileID: 2800000, guid: 0211363779d50ed4f8c6d06cfce5f2c7, type: 3}
+  previewImage: {fileID: 2800000, guid: 321a1a783a2fc09439a679ee4e905245, type: 3}
